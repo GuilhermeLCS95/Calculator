@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Calculator from './main/Calculator';
+import Greetings from './greetings/Greetings'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Greetings></Greetings>
+      <h1>Calculadora</h1>
+      <Calculator />
+    </div>
+    
   </React.StrictMode>
 );
 
